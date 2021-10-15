@@ -1,0 +1,174 @@
+/* General */
+* {
+  font-family: "Gemunu Libre", "Advent Pro", "Kanit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header Section */
+.navbar-brand {
+  position: relative;
+  left: 1%;
+}
+
+.nav-text {
+  color: white;
+  padding: 0px 36px;
+}
+
+.nav-text:hover {
+  color: gray;
+}
+
+#headerSticky {
+  display: block;
+  z-index: 9999;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .nav-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #headerMain {
+    display: none;
+  }
+
+  #headerSticky {
+    display: none;
+  }
+
+  .menu-list .nav-item {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.navbar-logo {
+  color: white;
+}
+
+.nav-link-small {
+  color: white;
+}
+
+.nav-small {
+  padding: 0px 0px;
+}
+
+/* Products Section */
+.product-text {
+  color: black;
+}
+
+.product-text:hover {
+  color: grey;
+}
+
+.newshoes {
+  position: relative;
+  left: 0%;
+}
+
+.newkits {
+  position: relative;
+  left: 0%;
+}
+
+.shoes-container {
+  position: relative;
+}
+
+.shoes-grouptext {
+  position: absolute;
+  top: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .shoes-grouptext {
+    position: absolute;
+    top: 30%;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shoes-text {
+    font-size: 22px !important;
+  }
+}
+
+.kits-container {
+  position: relative;
+}
+
+.kits-pic {
+  display: block;
+}
+
+.kits-grouptext {
+  position: absolute;
+  top: 60%;
+  left: 2%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.kits-container:hover .kits-grouptext {
+  opacity: 1;
+}
+
+.kits-container:hover .kits-pic {
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 768px) {
+  .kits-grouptext {
+    position: absolute;
+    top: 45%;
+  }
+}
+
+/* Footer Section */
+.footer-copyright {
+  border-top: 1px solid white;
+  padding: 0px 0px 16px 0px;
+}
+
+.contact-item {
+  margin-right: 12px;
+  width: 24px;
+}
+
+.contactme-link {
+  text-decoration: none;
+}
+
+.footer-text {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-text:hover {
+  color: grey;
+}
